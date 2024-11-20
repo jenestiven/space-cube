@@ -1,0 +1,69 @@
+body {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.block {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  perspective: 3000px;
+  transform-style: preserve-3d;
+  transform: rotateX(40deg) rotateY(0deg) rotateZ(-3deg);
+}
+
+.face {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #000;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.face-a {
+  width: 50%;
+  height: 110%;
+  transform: translateZ(50px) translateX(30px) rotateX(-60deg) rotateZ(5deg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.face-b {
+  width: 60px;
+  height: 200px;
+  transform: rotateY(-80deg) rotateX(-10deg) rotateZ(-22deg) translateZ(-70px)
+    translateX(108px) translateY(90px);
+  transform-origin: right center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.face-c {
+  width: 62px;
+  height: 200px;
+  transform: rotateY(-90deg) rotateX(20deg) rotateZ(-20deg) translateZ(0px)
+    translateY(50px) translateX(40px);
+  transform-origin: left center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.face-d {
+  width: 200px;
+  height: 40px;
+  transform: rotateX(-50deg) rotateY(2deg) rotateZ(4deg) translateZ(400px)
+    translateY(35px) translateX(-50px);
+  transform-origin: center bottom;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.face-d:hover {
+  background-color: blue;
+}

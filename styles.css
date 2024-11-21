@@ -13,7 +13,8 @@ body {
   height: 50px;
   perspective: 3000px;
   transform-style: preserve-3d;
-  transform: rotateX(40deg) rotateY(0deg) rotateZ(-3deg);
+  background-color: beige;
+  transform: rotateX(40deg) rotateY(0deg) rotateZ(-6deg);
 }
 
 .face {
@@ -26,8 +27,8 @@ body {
   text-align: center;
   line-height: 50px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
 .face-a {
@@ -58,7 +59,7 @@ body {
 .face-d {
   width: 200px;
   height: 40px;
-  transform: rotateX(-50deg) rotateY(2deg) rotateZ(4deg) translateZ(400px)
+  transform: rotateX(-50deg) rotateY(2deg) rotateZ(6deg) translateZ(400px)
     translateY(35px) translateX(-50px);
   transform-origin: center bottom;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
